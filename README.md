@@ -49,7 +49,7 @@ Dentro de cada una se encontrara la resolucion en CUDA con C++ y OpenCV con Pyth
 
 1. Ingresamos a Colab y abrimos el archivo(`Tarea2/EcualizarImagen.ipynb`)
 2. Una vez abierto, ejecutamos en orden los comandos como aparece en la imagen:
-[![Colab de Tarea2]](./images/tarea2_1.PNG)
+![Funciones iniciales](images/tarea2_1.PNG)
 3. Llegamos al cuarto cuadro y veremos el codigo el cual tiene definido un histograma de la imagen que se tomo como ejemplo, en este caso de la imagen en (`Tarea2/Imagenes/kodim08_grayscale.png`)
 4. Ejecutamos el codigo.
 5. Tendremos la salida por pantalla de los pasos que esta realizando
