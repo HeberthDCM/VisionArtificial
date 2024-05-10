@@ -31,6 +31,9 @@ Dentro de cada una se encontrara la resolucion en CUDA con C++ y OpenCV con Pyth
 **Descripcion**: Realizar utilizando CUDA con C++ el script para generar el histograma de cambio de brillo y otro de contraste
 
 **Archivos**: 
+* Carpeta "Imagenes": imagenes de prueba del script
+* Script EcualizarImagen: Script del Colab(principal)
+* Proyecto Ecualizador en VS: Proyecto en Visual Studio 2022 con OpenCV para obtener el histograma y mostrar las imagenes de resultado.
 
 **Solucion**: 
 
