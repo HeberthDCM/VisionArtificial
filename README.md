@@ -31,12 +31,24 @@ Dentro de cada una se encontrara la resolucion en CUDA con C++ y OpenCV con Pyth
 **Descripcion**: Realizar utilizando CUDA con C++ el script para generar el histograma de cambio de brillo y otro de contraste
 
 **Archivos**: 
-* Carpeta "Imagenes": imagenes de prueba del script
-* Script EcualizarImagen: Script del Colab(principal)
-* Proyecto Ecualizador en VS: Proyecto en Visual Studio 2022 con OpenCV para obtener el histograma y mostrar las imagenes de resultado.
 
 **Solucion**: 
+1. Ingresamos a Colab y abrimos el archivo(`Tarea1/brillo_contraste.ipynb`).
+2. Una vez abierto, ejecutamos en orden los comandos.
+3. Usamos OPENCV para cargar las imagenes y pasarlas a 2 matriz de dos dimensiones.
 
+4. Reducimos el tamaño de las matrices para facilitar el proceso y que ambas sean de la misma dimensión
+
+5. Declaramos la función CUDA para poder aumentar o reducir el brillo y el contraste: R(x, y):= (A(x,y) + factor para el brillo y R(x, y):= (A(x,y) * factor para el contraste, donde la matriz resultante es la asición o multiplicaciòn por una constantente.
+6. Declaramos las filas y columnas y tamaño de las matrices
+7. Copiamos la matriz a una varable declarada en cuda/c++
+8. Declaramos la matriz de salida
+9. Procedemos a localizar la memoria en el GPU
+10. Copiamos las matrices A del host al device
+11. Definimos red y los bloques
+12. Lanzamos la funcion Kernel
+13. Copiamos la matriz resultante del device(gpu) al host
+14. Liberamos la memoria del gpu.
 **Screenshots de Test**:
 
 ## TAREA 2 
